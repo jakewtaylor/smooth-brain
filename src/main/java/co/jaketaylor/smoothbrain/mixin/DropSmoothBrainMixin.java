@@ -23,17 +23,19 @@ public abstract class DropSmoothBrainMixin extends Entity {
 
     @Inject(at = @At("RETURN"), method="dropInventory")
     private void dropInventory(CallbackInfo info) {
+        // he who has smooth brain
         LiteralText name = new LiteralText("billiambamer");
-        System.out.println(this.getCustomName());
+
         if (this.hasCustomName() && this.getCustomName().equals(name)) {
             // Create a stack of one smooth brain
             ItemStack itemStack = new ItemStack(SmoothBrainMod.SMOOTH_BRAIN);
 
-            // Create the item entity
+            // Create the smooth brain entity
             ItemEntity entity = new ItemEntity(this.world, this.x, this.y, this.z, itemStack);
             entity.setPickupDelay(40);
             entity.setThrower(this.uuid);
 
+            // spawn the smooth brain
             this.world.spawnEntity(entity);
         }
     }
