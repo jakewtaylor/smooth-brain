@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "smooth_brain:item/smooth_brain"
+    }
+}

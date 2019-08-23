@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "smoothbrain",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Smooth Brain",
+  "description": "some peoples brain so smooth they need a mc mod",
   "authors": [
-    "Me!"
+    "Jake Taylor"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/jakewtaylor/smooth-brain",
+    "sources": "https://github.com/jakewtaylor/smooth-brain"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/smoothbrain/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "co.jaketaylor.smoothbrain.SmoothBrainMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "smooth_brain.mixins.json"
   ],
 
   "depends": {

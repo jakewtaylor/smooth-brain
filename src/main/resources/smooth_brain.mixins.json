@@ -1,11 +1,11 @@
 {
   "required": true,
-  "package": "net.fabricmc.example.mixin",
+  "package": "co.jaketaylor.smoothbrain.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "DropSmoothBrainMixin"
   ],
   "client": [
-    "ExampleMixin"
   ],
   "injectors": {
     "defaultRequire": 1
